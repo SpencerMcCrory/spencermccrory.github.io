@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #edeef8;
+  --orange: hsl(27, 55%, 52%);
+  --boxshadow: rgba(17, 12, 46, 0.45) 0px 48px 100px 0px;
+  --purple: hsl(264, 55%, 52%);
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  font-size: 13px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* navigation bar styling */
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+nav a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  /* background-color: rgba(17, 12, 46, 0.05); */
+  box-shadow: var(--boxshadow);
+  border-radius: 10%;
+}
+
+.navbar {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+/* main header styling */
+.main-profile {
+  background-image: url(../images/bg-portfolio-blue.png);
+  box-shadow: var(--boxshadow);
+  background-size: cover;
+  padding: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 1%;
+  grid-column: 1/5;
+}
+
+.header-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.main-profile-about {
+  text-align: center;
+}
+
+.profile-pic-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 89%;
+}
+
+#profile-image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(19, 0, 112, 0.753);
+  margin-left: 20px;
+  box-shadow: rgba(13, 2, 76, 0.647) 0px 0px 40px 10px;
+}
+.profile-image {
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#portfolio-title {
+  margin: 100px;
+  font-size: 3rem;
+  text-align: center;
+}
+.container {
+  max-width: 1400px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card header h3 {
+  font-size: 1.3rem;
+}
+
+.card header p {
+  opacity: 50%;
+}
+
+.card header img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.card .main-text {
+  font-size: 1.6rem;
+}
+
+.card .sub-text {
+  opacity: 50%;
+}
+
+.card-green {
+  background: hsl(37, 55%, 52%);
+  color: white;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.card-light-blue {
+  background: hsl(146, 55%, 52%);
+  color: white;
+}
+
+.card-gray {
+  background: hsl(246, 55%, 52%);
+  color: white;
+}
+
+.card-blue {
+  background: hsl(241, 55%, 52%);
+  color: white;
+  box-shadow: rgba(36, 13, 167, 0.803) 0px 0px 10px 0px;
+}
+
+.card-purple {
+  background: hsl(275, 55%, 52%);
+  color: white;
+}
+
+.portfolio-images {
+  border-radius: 5%;
+  max-width: 300px;
+  max-height: 200px;
+  min-height: 200px;
+}
+
+h3 {
+  margin-left: 3px;
+}
+
+#name {
+  margin-top: 0px;
+  font-size: 2rem;
+  text-shadow: var(--orange) 4px 2px;
+}
+
+#name-about {
+  margin-top: 0px;
+  font-size: 2rem;
+  text-shadow: var(--orange) 4px 2px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+#about-me {
+  margin-top: 20px;
+}
+
+#about-profile-image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(19, 0, 112, 0.753);
+  margin-right: 10px;
+  box-shadow: rgba(13, 2, 76, 0.647) 0px 0px 40px 10px;
+}
+
+.sub-text2 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
+hr {
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+#social-media {
+  text-align: center;
+  color: black;
+}
+.social-media {
+  color: black;
+  text-decoration: none;
+}
+.social-media:hover {
+  box-shadow: rgba(17, 12, 46, 0.45) 4px 10px 50px 2px;
+  border-radius: 10%;
+  padding: 1px;
+}
+#link-portfolio {
+  text-align: center;
+}
+.inspirations {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+i {
+  margin: 5px;
+}
+
+.inspirations:hover {
+  text-decoration: underline;
+}
+
+#link-portfolio {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .card:nth-of-type(3) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .card:nth-of-type(4) {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .card:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body {
+    margin: 0;
+  }
+
+  .header-with-aside {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 0;
+    padding: 0;
+  }
+  .main-profile {
+    width: 100%;
+  }
+  .portfolio-images {
+    border-radius: 5%;
+    max-width: 300px;
+    max-height: 200px;
+    min-height: 0;
+  }
+}
+
+.education-section {
+  padding: 20px 0;
+}
+
+.education-entry {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: rgba(13, 2, 76, 0.142) 0px 5px 20px 1px;
+  display: flex;
+  justify-content: space-between; /* Align items to opposite sides */
+  align-items: center;
+  width: 80%;
+}
+
+.education-entry h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.program-details,
+.gpa-details {
+  margin: 10px; /* Adjust as needed */
+}
+
+.gpa-details {
+  margin-top: 40px;
+}
