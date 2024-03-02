@@ -79,7 +79,8 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 89%;
+  width: 70%;
+  margin-left: 100px;
 }
 
 #profile-image {
@@ -100,10 +101,39 @@ nav a:hover {
   text-align: center;
 }
 
+/* PORTFOLIO CARD */
 #portfolio-title {
   margin: 100px;
   font-size: 3rem;
   text-align: center;
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.portfolio-links a {
+  text-decoration: none;
+}
+
+.portfolio-links i {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.portfolio-links i:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.portoflio-links-anchor-tag {
+  display: flex;
+  flex-direction: column;
+}
+.portoflio-links-anchor-tag:hover {
+  color: white;
 }
 .container {
   max-width: 1400px;
@@ -124,6 +154,9 @@ nav a:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   margin-bottom: 10px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card header {
@@ -155,27 +188,21 @@ nav a:hover {
   opacity: 50%;
 }
 
-.card-green {
+.card-orange {
   background: hsl(37, 55%, 52%);
   color: white;
   grid-column: 1;
   grid-row: 1/2;
 }
 
-.card-light-blue {
+.card-green {
   background: hsl(146, 55%, 52%);
   color: white;
 }
 
-.card-gray {
+.card-blue {
   background: hsl(246, 55%, 52%);
   color: white;
-}
-
-.card-blue {
-  background: hsl(241, 55%, 52%);
-  color: white;
-  box-shadow: rgba(36, 13, 167, 0.803) 0px 0px 10px 0px;
 }
 
 .card-purple {
@@ -185,9 +212,14 @@ nav a:hover {
 
 .portfolio-images {
   border-radius: 5%;
-  max-width: 300px;
-  max-height: 200px;
-  min-height: 200px;
+  max-width: 525px;
+  max-height: 350px;
+  min-height: 350px;
+  margin-bottom: 10px;
+}
+
+.card-links-content-seperator {
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -200,7 +232,7 @@ h3 {
   text-shadow: var(--orange) 4px 2px;
 }
 
-#name-about {
+#profile-header {
   margin-top: 0px;
   font-size: 2rem;
   text-shadow: var(--orange) 4px 2px;
@@ -211,16 +243,35 @@ h3 {
 
 #about-me {
   margin-top: 20px;
+  background: hsl(241, 55%, 52%);
+  color: white;
+  box-shadow: rgba(36, 13, 167, 0.803) 0px 0px 10px 0px;
+}
+#about-me li:not(:last-child) {
+  margin-bottom: 10px;
+}
+#about-me li {
+  font-size: 1.1rem;
+}
+li a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Softer shadow */
+}
+#about-me li a {
+  color: white;
+}
+#about-me li a:hover {
+  color: rgb(241, 241, 241);
 }
 
-#about-profile-image {
+#about-profile-image,
+#connect-profile-image {
   height: 150px;
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid rgba(19, 0, 112, 0.753);
   margin-right: 10px;
-  box-shadow: rgba(13, 2, 76, 0.647) 0px 0px 40px 10px;
+  box-shadow: var(--boxshadow);
 }
 
 .sub-text2 {
@@ -329,6 +380,23 @@ i {
     max-width: 300px;
     max-height: 200px;
     min-height: 0;
+  }
+  .profile-pic-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  #about-sub-text {
+    font-size: 1.2rem;
+  }
+  #about-name {
+    font-size: 1.5rem;
+  }
+  #profile-header {
+    margin: 0;
   }
 }
 
