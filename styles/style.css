@@ -13,6 +13,8 @@
   --orange: hsl(27, 55%, 52%);
   --boxshadow: rgba(17, 12, 46, 0.45) 0px 48px 100px 0px;
   --purple: hsl(264, 55%, 52%);
+  --blue: hsl(246, 55%, 52%);
+  --bluer: hsl(241, 55%, 52%);
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 /* navigation bar styling */
 nav {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 nav a {
@@ -39,9 +41,12 @@ nav a {
 }
 
 nav a:hover {
-  /* background-color: rgba(17, 12, 46, 0.05); */
-  box-shadow: var(--boxshadow);
   border-radius: 10%;
+  color: var(--purple);
+}
+
+.nav-icon {
+  padding: 0;
 }
 
 .navbar {
@@ -128,11 +133,11 @@ nav a:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.portoflio-links-anchor-tag {
+.portoflio-icon-links {
   display: flex;
   flex-direction: column;
 }
-.portoflio-links-anchor-tag:hover {
+.portoflio-icon-links:hover {
   color: white;
 }
 .container {
